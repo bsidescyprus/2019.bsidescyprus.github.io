@@ -38,14 +38,14 @@ RESPONSIVE
 \*----------------------------*/
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
-  color: #444;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0px 0px 15px;
-  color: #0b0f28;
+  color: #3b3838;
   font-weight: 700;
 }
 
@@ -196,6 +196,7 @@ textarea.input {
 
 #header.transparent-navbar:not(.fixed-navbar) .navbar-brand .logo .logo-img {
   display: none;
+  max-height: 10px;
 }
 
 #header.fixed-navbar .navbar-brand .logo .logo-alt-img {
@@ -273,7 +274,7 @@ textarea.input {
 }
 
 #header.transparent-navbar .main-nav li a {
-  color: #FFF;
+  color: #013763;
 }
 
 #header.fixed-navbar .main-nav li a {
@@ -287,16 +288,16 @@ textarea.input {
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #dd0a37;
+  background: #013763;
 }
 
 .main-nav li a:hover, .main-nav li a:focus {
   background-color: transparent;
-  color: #dd0a37;
+  color: #013763;
 }
 
 #header.transparent-navbar .main-nav li a:hover {
-  color: #dd0a37;
+  color: #00878d;
 }
 
 .navbar-toggle {
@@ -308,7 +309,7 @@ textarea.input {
   margin: 15px;
   padding: 0;
   font-size: 32px;
-  color: #0b0f28;
+  color: #013763;
 }
 
 #header.transparent-navbar .navbar-toggle {
@@ -316,7 +317,7 @@ textarea.input {
 }
 
 #header.fixed-navbar .navbar-toggle {
-  color: #0b0f28 !important;
+  color: #013763 !important;
 }
 
 /* Mobile nav */
@@ -337,10 +338,10 @@ textarea.input {
     display: none;
   }
   #header.transparent-navbar .main-nav li a {
-    color: #0b0f28;
+    color: #013763;
   }
   .main-nav li a:hover, .main-nav li a:focus, .main-nav li.active a {
-    background-color: #dd0a37;
+    background-color: #013763;
     color: #fff !important;
   }
   .navbar-toggle {
@@ -385,6 +386,18 @@ textarea.input {
 .page-wrapper-content {
   text-align: center;
 }
+/*=========================================================
+	CFP
+===========================================================*/
+
+#cfp { background: #00878d !important;}
+
+/*=========================================================
+	VOLUNTEERS
+===========================================================*/
+
+#cfv { background: #00878d !important;}
+
 
 /*=========================================================
 	ABOUT
@@ -401,16 +414,12 @@ textarea.input {
 .number h3 {
   font-size: 42px;
   margin-bottom: 0px;
-  color: #dd0a37;
+  color: #00878d;
 }
 
 .number p {
   text-transform: uppercase;
-  color: #0b0f28;
-}
-
-.text-center {
-	text-align: justify;
+  color: #00878d;
 }
 
 /*=========================================================
@@ -703,7 +712,7 @@ textarea.input {
   height: 60px;
   top: -60px;
   width: 4px;
-  background-color: #dd0a37;
+  background-color: #d3781e;
 }
 
 .event .event-day {
@@ -813,7 +822,7 @@ textarea.input {
 }
 
 .contact h3 {
-  color: #dd0a37;
+  color: #00878d;
 }
 
 #map {
@@ -881,7 +890,7 @@ textarea.input {
   height: 30px;
   text-align: center;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #00878d;
   color: #fff;
   line-height: 30px;
   margin-right: 15px;
