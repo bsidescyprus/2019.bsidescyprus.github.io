@@ -794,7 +794,7 @@ textarea.input {
 
 .sponsor {
   display: block;
-  opacity: 0.5;
+  opacity: 0.9;
   margin-bottom: 30px;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
