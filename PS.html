@@ -1,0 +1,10 @@
+Get-ADPrincipalGroupMembership username | select 'XXXXXX', name
+
+
+get-ADUser  -Filter 'SURName -eq "xxxxx"' -Properties  AccountExpirationDate, accountExpires, AccountLockoutTime, BadLogonCount, badPasswordTime, badPwdCount, CannotChangePassword, Created, Deleted, Department, DistinguishedName, Enabled, lastLogoff, lastLogon, LastLogonDate, LockedOut, lockoutTime, logonCount, MemberOf, Name, PasswordExpired, PasswordLastSet, PasswordNeverExpires, PasswordNotRequired, PrimaryGroup, pwdLastSet, SamAccountName, whenChanged, whenCreated | Select  AccountExpirationDate, accountExpires, AccountLockoutTime, BadLogonCount, badPasswordTime, badPwdCount, CannotChangePassword, Created, Deleted, Department, DistinguishedName, Enabled, lastLogoff, lastLogon, LastLogonDate, LockedOut, lockoutTime, userWorkstations, logonCount, MemberOf, Name, PasswordExpired, PasswordLastSet, PasswordNeverExpires, PasswordNotRequired, PrimaryGroup, pwdLastSet, SamAccountName, whenChanged, whenCreated | Export-CSV "C:\Users\xxxxx\Desktop\xxxx.csv"
+
+$user = Get-Content "C:\USers\c.florides\Desktop\users.txt"
+foreach($username in $user) {
+echo $username
+   Get-ADPrincipalGroupMembership $username | select $username, name
+   }
